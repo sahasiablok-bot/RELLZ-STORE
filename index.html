@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050d1c">
+  <meta name="description" content="RELLZ STORE — katalog jual beli akun game MLBB dan Free Fire.">
+  <title>RELLZ STORE — Game Account Marketplace</title>
+  <link rel="icon" href="/assets/logo.png">
+  <style>
+    :root{--bg:#030916;--panel:#071a31;--panel2:#0a223d;--line:#123b5d;--blue:#39c8ff;--blue2:#168bff;--text:#f3f8ff;--muted:#9cb2ca;--purple:#a855f7}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 50% -15%,#103f78 0,transparent 42%),linear-gradient(180deg,#030916,#041425 60%,#03101d);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    a{color:inherit;text-decoration:none}button,input,select{font:inherit}.wrap{width:min(100% - 28px,980px);margin:auto}
+    .topbar{position:sticky;top:0;z-index:20;background:#030916eF;backdrop-filter:blur(14px);border-bottom:1px solid #12304b}
+    .nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:12px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;letter-spacing:.4px}.brand img{width:42px;height:42px;object-fit:cover;border-radius:50%;border:1px solid #5f8fff;box-shadow:0 0 16px #237fff55}.brand span{font-size:17px}.brand b{color:var(--blue)}
+    .navlinks{display:flex;gap:18px;color:var(--muted);font-size:13px}.navlinks a:hover{color:var(--blue)}
+    .btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid #23628b;background:linear-gradient(135deg,#087fc2,#1762d6);color:white;font-weight:800;cursor:pointer;box-shadow:0 7px 24px #007dff20;transition:.2s}.btn:hover{transform:translateY(-1px);filter:brightness(1.12)}.btn.secondary{background:#0b2037;border-color:#1c4261;box-shadow:none}.btn.small{padding:9px 12px;font-size:13px}
+    .hero{padding:36px 0 24px;text-align:center}.hero-logo{width:128px;height:128px;object-fit:cover;border-radius:50%;border:3px solid #552bff;box-shadow:0 0 0 7px #1648a044,0 0 36px #7c3cff65}.eyebrow{display:inline-flex;margin:19px auto 12px;padding:7px 13px;border:1px solid #15517b;border-radius:999px;color:var(--blue);background:#092542;font-size:11px;font-weight:900;letter-spacing:1.4px}.hero h1{margin:0;font-size:clamp(30px,6vw,54px);line-height:1.05;letter-spacing:-1.7px}.hero h1 span{background:linear-gradient(90deg,#fff,#49caff,#9b7bff);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:590px;margin:15px auto 20px;color:#b4c8dd;line-height:1.7;font-size:15px}.hero-actions{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}
+    .trust{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 28px}.trust div{background:#071a2c;border:1px solid #123553;border-radius:14px;padding:13px 8px;text-align:center;color:#b8d0e8;font-size:12px}.trust strong{display:block;color:var(--blue);font-size:14px;margin-bottom:4px}
+    .section{margin:18px 0 24px;padding:20px;border:1px solid #123653;border-radius:24px;background:linear-gradient(145deg,#071a30ed,#061529ed);box-shadow:0 14px 40px #0002}.section-head{display:flex;justify-content:space-between;align-items:end;gap:12px;margin-bottom:17px}.section h2{font-size:21px;margin:0;letter-spacing:-.4px}.section-head p{margin:5px 0 0;color:var(--muted);font-size:12px}.tag{font-size:10px;font-weight:900;letter-spacing:1px;color:var(--blue);border:1px solid #16486a;background:#09243e;border-radius:99px;padding:7px 10px;white-space:nowrap}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}.filter{background:#091e35;border:1px solid #173c5b;color:#b8cce0;padding:9px 13px;border-radius:10px;font-weight:750;font-size:12px;cursor:pointer}.filter.active{color:#fff;border-color:#2bbcff;background:#0b3a5b;box-shadow:0 0 16px #17aaff1c}
+    .searchrow{display:flex;gap:9px;margin-bottom:16px}.searchrow input,.searchrow select{min-width:0;width:100%;background:#041326;border:1px solid #173c5b;color:white;border-radius:11px;padding:12px;outline:none}.searchrow input:focus,.searchrow select:focus{border-color:var(--blue)}
+    .products{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product{overflow:hidden;border:1px solid #143958;border-radius:17px;background:linear-gradient(160deg,#0b2540,#071629);min-width:0}.product-art{height:118px;display:grid;place-items:center;position:relative;background:radial-gradient(circle at 50% 45%,#155c99,#071a31 65%);font-size:43px}.product-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,#071629)}.game-pill{position:absolute;z-index:1;top:10px;left:10px;background:#061527dd;border:1px solid #2b8bb9;border-radius:8px;padding:5px 8px;font-size:9px;font-weight:900;letter-spacing:.5px}.product-body{position:relative;padding:13px}.product h3{margin:0 0 7px;font-size:15px}.product-desc{font-size:12px;color:var(--muted);line-height:1.5;min-height:36px}.price{color:var(--blue);font-size:19px;font-weight:950;margin:12px 0}.product-actions{display:flex;gap:7px}.product-actions .btn{flex:1;padding:10px 7px;font-size:11px}.empty{grid-column:1/-1;padding:30px;text-align:center;color:var(--muted);border:1px dashed #244766;border-radius:14px}
+    .info-list{display:grid;gap:10px}.info-item{display:flex;align-items:center;gap:13px;background:#091b30;border:1px solid #112f4c;border-radius:15px;padding:14px}.info-icon{width:42px;height:42px;display:grid;place-items:center;background:#0a2b49;border:1px solid #174c71;border-radius:12px;font-size:21px;flex-shrink:0}.info-item .copy{flex:1;min-width:0}.info-item strong{display:block;font-size:14px}.info-item small{display:block;color:var(--muted);margin-top:4px;font-size:12px;line-height:1.45}.arrow{color:var(--blue);font-size:23px;font-weight:900}
+    .fee-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.fee{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:14px 12px;background:#081f37;border:1px solid #123858;border-radius:13px;font-size:12px;color:#c3d5e7}.fee b{font-size:17px;color:var(--blue);white-space:nowrap}.notice{display:flex;gap:13px;align-items:center;background:linear-gradient(120deg,#171a20,#09262d);border:1px solid #4b4825;border-radius:18px;padding:17px;margin:18px 0 24px}.notice .warn{font-size:30px}.notice strong{color:#ffda76}.notice p{color:#bdc9d4;font-size:12px;line-height:1.6;margin:5px 0 0}
+    footer{text-align:center;padding:25px 12px 90px;color:#7892ad;font-size:12px}footer b{color:#b8d9f4}.mobilebar{display:none}
+    .modal{position:fixed;inset:0;z-index:50;background:#000b;display:none;align-items:center;justify-content:center;padding:18px}.modal.open{display:flex}.modal-card{width:min(100%,460px);background:#071a30;border:1px solid #22618a;border-radius:22px;padding:21px;box-shadow:0 20px 80px #0009}.modal-head{display:flex;align-items:center;justify-content:space-between;gap:12px}.modal-head h2{font-size:20px;margin:0}.close{background:#102c47;border:1px solid #1b496b;color:white;border-radius:9px;padding:7px 11px;cursor:pointer}.modal-card p{color:#b1c5d9;line-height:1.6;font-size:13px}.detail-price{font-size:26px;font-weight:950;color:var(--blue)}.detail-label{font-size:11px;color:#6fa9d1;text-transform:uppercase;letter-spacing:1px;margin-top:14px}.detail-value{font-size:14px;margin-top:4px}.modal-card .btn{width:100%;margin-top:17px}
+    @media(min-width:700px){.hero{padding-top:48px}.hero-logo{width:150px;height:150px}.products{grid-template-columns:repeat(3,minmax(0,1fr))}.product-art{height:145px}.section{padding:25px}.info-list.two{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:560px){.navlinks{display:none}.nav .btn{padding:9px 11px;font-size:12px}.hero{padding-top:27px}.hero-logo{width:112px;height:112px}.trust{gap:6px}.trust div{font-size:10px;padding:11px 4px}.trust strong{font-size:12px}.section{padding:15px;border-radius:20px}.section h2{font-size:18px}.section-head{align-items:center}.products{gap:9px}.product-art{height:95px;font-size:35px}.product-body{padding:10px}.product h3{font-size:13px}.product-desc{font-size:11px;min-height:48px}.price{font-size:17px}.product-actions{flex-direction:column}.product-actions .btn{width:100%}.fee-grid{gap:7px}.fee{padding:12px 9px;font-size:11px}.fee b{font-size:15px}.mobilebar{display:flex;position:fixed;z-index:25;bottom:0;left:0;right:0;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#030916ed;border-top:1px solid #153957;backdrop-filter:blur(12px);gap:9px}.mobilebar .btn{flex:1;padding:12px 7px;font-size:12px}footer{padding-bottom:100px}}
+  </style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav">
+  <a class="brand" href="#"><img src="/assets/logo.png" alt="Logo RELLZ STORE"><span>RELLZ <b>STORE</b></span></a>
+  <nav class="navlinks"><a href="#katalog">Katalog</a><a href="#layanan">Layanan</a><a href="#pembayaran">Pembayaran</a></nav>
+  <a class="btn small" href="#katalog">Lihat Akun ↗</a>
+</div></header>
+<main class="wrap">
+  <section class="hero">
+    <img class="hero-logo" src="/assets/logo.png" alt="Logo RELLZ STORE">
+    <div class="eyebrow">✦ GAME ACCOUNT MARKETPLACE ✦</div>
+    <h1>WELCOME TO<br><span>RELLZ STORE</span></h1>
+    <p>Tempat jual beli akun game dengan proses yang jelas dan komunikasi langsung dengan admin. Pilih akun, cek detailnya, lalu order melalui WhatsApp.</p>
+    <div class="hero-actions"><a class="btn" href="#katalog">🎮 Jelajahi Katalog</a><a class="btn secondary" href="https://wa.me/628818375778" target="_blank" rel="noopener">💬 Hubungi Admin</a></div>
+    <div class="trust"><div><strong>🔐 Aman</strong>Utamakan keamanan</div><div><strong>⚡ Responsif</strong>Order via WhatsApp</div><div><strong>🤝 Transparan</strong>Cek detail dahulu</div></div>
+  </section>
+
+  <section class="section" id="katalog">
+    <div class="section-head"><div><h2>🎮 KATALOG AKUN</h2><p>Pilih game dan lihat detail akun yang tersedia.</p></div><span class="tag">MARKETPLACE</span></div>
+    <div class="filters" id="filters">
+      <button class="filter active" data-game="Semua">Semua</button><button class="filter" data-game="MLBB">Mobile Legends</button><button class="filter" data-game="Free Fire">Free Fire</button>
+    </div>
+    <div class="searchrow"><input id="search" placeholder="Cari akun atau detail..." aria-label="Cari akun"><select id="sort" aria-label="Urutkan harga"><option value="default">Urutkan harga</option><option value="low">Termurah dahulu</option><option value="high">Termahal dahulu</option></select></div>
+    <div class="products" id="products"></div>
+    <p style="font-size:11px;color:#7f9bb5;line-height:1.6;margin:15px 2px 0">Catatan: kartu bertanda CONTOH adalah data demonstrasi. Ganti dengan akun, foto, detail, dan harga asli sebelum website dipublikasikan.</p>
+  </section>
+
+  <section class="section" id="layanan">
+    <div class="section-head"><div><h2>🛡️ LAYANAN TOKO</h2><p>Informasi layanan RELLZ STORE.</p></div></div>
+    <div class="info-list two">
+      <div class="info-item"><div class="info-icon">🤝</div><div class="copy"><strong>Jual Beli Akun</strong><small>Hubungi admin untuk cek ketersediaan dan detail akun.</small></div><span class="arrow">›</span></div>
+      <div class="info-item"><div class="info-icon">🔐</div><div class="copy"><strong>Jasa Rekber</strong><small>Ketentuan dan biaya harus disepakati sebelum transaksi.</small></div><span class="arrow">›</span></div>
+      <div class="info-item"><div class="info-icon">💬</div><div class="copy"><strong>Konsultasi Order</strong><small>Tanyakan informasi produk melalui WhatsApp admin.</small></div><span class="arrow">›</span></div>
+      <div class="info-item"><div class="info-icon">📋</div><div class="copy"><strong>Detail Transparan</strong><small>Pastikan akses, kepemilikan, dan ketentuan akun jelas.</small></div><span class="arrow">›</span></div>
+    </div>
+  </section>
+
+  <section class="section" id="biaya">
+    <div class="section-head"><div><h2>🔰 BIAYA ADMIN</h2><p>Contoh tabel biaya, silakan sesuaikan dengan ketentuan toko.</p></div></div>
+    <div class="fee-grid">
+      <div class="fee"><span>Transaksi 0–5K</span><b>1K</b></div><div class="fee"><span>Transaksi 6–29K</span><b>3K</b></div>
+      <div class="fee"><span>Transaksi 30–99K</span><b>5K</b></div><div class="fee"><span>Transaksi 100–299K</span><b>10K</b></div>
+      <div class="fee"><span>Transaksi 300–499K</span><b>15K</b></div><div class="fee"><span>Transaksi 500–699K</span><b>20K</b></div>
+      <div class="fee"><span>Transaksi 700–999K</span><b>25K</b></div><div class="fee"><span>Transaksi 1.000K+</span><b>25K</b></div>
+    </div>
+    <div class="info-list" style="margin-top:10px">
+      <div class="info-item"><div class="info-icon">🔄</div><div class="copy"><strong>BT / TT OPEN</strong><small>Biaya jasa: 15K — konfirmasi ketentuan kepada admin.</small></div></div>
+      <div class="info-item"><div class="info-icon">⏳</div><div class="copy"><strong>DELAY</strong><small>5K / 10K — sesuai kondisi dan kesepakatan.</small></div></div>
+      <div class="info-item"><div class="info-icon">🔐</div><div class="copy"><strong>JASA AMANKAN AKUN</strong><small>15K — tanyakan cakupan layanan sebelum transaksi.</small></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="pembayaran">
+    <div class="section-head"><div><h2>💳 PAYMENT</h2><p>Konfirmasi nominal dan tujuan pembayaran dengan admin.</p></div><span class="tag">KONFIRMASI ADMIN</span></div>
+    <div class="info-list">
+      <div class="info-item"><div class="info-icon">💳</div><div class="copy"><strong>DANA / QRIS</strong><small>Metode pembayaran dapat dikonfirmasi melalui WhatsApp. Nomor dan QR resmi belum dipasang.</small></div><a class="arrow" href="https://wa.me/628818375778?text=Halo%20RELLZ%20STORE%2C%20saya%20ingin%20konfirmasi%20metode%20pembayaran." target="_blank" rel="noopener">›</a></div>
+    </div>
+  </section>
+
+  <div class="notice"><div class="warn">⚠️</div><div><strong>PERHATIAN TRANSAKSI</strong><p>Pastikan harga, detail akun, akses pemulihan, dan biaya layanan disepakati sebelum membayar. Jangan kirim kata sandi, kode OTP, atau kode pemulihan ke halaman publik. Ketentuan pembatalan harus dijelaskan oleh admin sebelum transaksi.</p></div></div>
+</main>
+<footer>© <span id="year"></span> <b>RELLZ STORE</b> · Game Account Marketplace<br><span style="display:inline-block;margin-top:7px">Website katalog demo — transaksi dikonfirmasi langsung dengan admin.</span></footer>
+<div class="mobilebar"><a class="btn secondary" href="#katalog">🎮 Katalog</a><a class="btn" href="https://wa.me/628818375778" target="_blank" rel="noopener">💬 WhatsApp Admin</a></div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-card"><div class="modal-head"><h2 id="modalTitle">Detail akun</h2><button class="close" id="closeModal" aria-label="Tutup">✕</button></div>
+    <p id="modalDesc"></p><div class="detail-label">Harga</div><div class="detail-price" id="modalPrice"></div><div class="detail-label">Informasi akun</div><div class="detail-value" id="modalInfo"></div>
+    <a class="btn" id="modalOrder" href="#" target="_blank" rel="noopener">Order via WhatsApp ↗</a>
+  </div>
+</div>
+<script>
+const ADMIN_WA = "628818375778";
+// GANTI DATA CONTOH DI BAWAH dengan listing akun milik sendiri yang memang siap dijual.
+const products = [
+ {id:1,game:"MLBB",name:"Akun MLBB — Starter",price:25000,desc:"Contoh listing • detail hero dan skin belum diisi.",info:"Rank: isi rank | Skin: isi jumlah | Bind: jelaskan status bind",emoji:"⚔️",status:"CONTOH"},
+ {id:2,game:"MLBB",name:"Akun MLBB — Koleksi Skin",price:75000,desc:"Contoh listing • lengkapi data akun asli.",info:"Rank: isi rank | Skin: isi jumlah | Bind: jelaskan status bind",emoji:"🛡️",status:"CONTOH"},
+ {id:3,game:"Free Fire",name:"Akun Free Fire — Starter",price:30000,desc:"Contoh listing • detail level dan koleksi belum diisi.",info:"Level: isi level | Bundle: isi jumlah | Bind: jelaskan status bind",emoji:"🔥",status:"CONTOH"},
+ {id:4,game:"Free Fire",name:"Akun Free Fire — Koleksi",price:90000,desc:"Contoh listing • lengkapi data akun asli.",info:"Level: isi level | Bundle: isi jumlah | Bind: jelaskan status bind",emoji:"🎯",status:"CONTOH"}
+];
+let activeGame = "Semua";
+const rupiah = n => "Rp" + new Intl.NumberFormat("id-ID").format(n);
+const productsEl = document.getElementById("products");
+function orderUrl(p){const msg=`Halo RELLZ STORE, saya tertarik dengan ${p.name} (${p.game}) seharga ${rupiah(p.price)}. Apakah masih tersedia? Mohon info detail dan ketentuan transaksi.`;return `https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(msg)}`;}
+function render(){
+ let list=products.filter(p=>(activeGame==="Semua"||p.game===activeGame)&&(`${p.name} ${p.game} ${p.desc} ${p.info}`).toLowerCase().includes(document.getElementById("search").value.toLowerCase()));
+ const sort=document.getElementById("sort").value;if(sort==="low")list.sort((a,b)=>a.price-b.price);if(sort==="high")list.sort((a,b)=>b.price-a.price);
+ productsEl.innerHTML=list.length?list.map(p=>`<article class="product"><div class="product-art"><span class="game-pill">${p.game==="MLBB"?"MOBILE LEGENDS":"FREE FIRE"} · ${p.status}</span><span>${p.emoji}</span></div><div class="product-body"><h3>${p.name}</h3><div class="product-desc">${p.desc}</div><div class="price">${rupiah(p.price)}</div><div class="product-actions"><button class="btn secondary" data-detail="${p.id}">Detail</button><a class="btn" href="${orderUrl(p)}" target="_blank" rel="noopener">Order ↗</a></div></div></article>`).join(""):`<div class="empty">Tidak ada akun yang cocok. Coba kata kunci lain.</div>`;
+}
+document.getElementById("filters").addEventListener("click",e=>{const b=e.target.closest("[data-game]");if(!b)return;activeGame=b.dataset.game;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render();});
+document.getElementById("search").addEventListener("input",render);document.getElementById("sort").addEventListener("change",render);
+const modal=document.getElementById("modal");
+productsEl.addEventListener("click",e=>{const b=e.target.closest("[data-detail]");if(!b)return;const p=products.find(x=>x.id===Number(b.dataset.detail));if(!p)return;document.getElementById("modalTitle").textContent=p.name;document.getElementById("modalDesc").textContent=p.desc;document.getElementById("modalPrice").textContent=rupiah(p.price);document.getElementById("modalInfo").textContent=p.info;document.getElementById("modalOrder").href=orderUrl(p);modal.classList.add("open");});
+document.getElementById("closeModal").addEventListener("click",()=>modal.classList.remove("open"));modal.addEventListener("click",e=>{if(e.target===modal)modal.classList.remove("open")});document.addEventListener("keydown",e=>{if(e.key==="Escape")modal.classList.remove("open")});
+document.getElementById("year").textContent=new Date().getFullYear();render();
+</script>
+</body>
+</html>
